@@ -1,22 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercício soma</title>
+    <title>Calculadora</title>
 
     <script>
 
-        
+        function somar() {
+            const n1 = document.getElementById('n1').value;
+            const n2 = document.getElementById('n2').value;
+
+            const soma = Number(n1) + Number(n2);
+
+            document.getElementById('resultado').innerHTML = 'O resultado dos números é ' + soma + '.';
+        }
+
+        function subtrair(){
+            const n1 = document.getElementById('n1').value;
+            const n2 = document.getElementById('n2').value;
+
+            const subtracao = Number(n1) - Number(n2);
+
+            document.getElementById('resultado').innerHTML = 'O resultado dos números é ' + subtracao + '.';
+        }
+
+        function multiplicar(){
+            const n1 = document.getElementById('n1').value;
+            const n2 = document.getElementById('n2').value;
+
+            const multiplicacao = Number(n1) * Number(n2);
+
+            document.getElementById('resultado').innerHTML = 'O resultado dos números é ' + multiplicacao + '.';
+        }
+
+        function dividir(){
+            const n1 = document.getElementById('n1').value;
+            const n2 = document.getElementById('n2').value;
+
+            const divisao = Number(n1) / Number(n2);
+
+            document.getElementById('resultado').innerHTML = 'O resultado dos números é ' + divisao + '.';
+        }
 
     </script>
 </head>
+
 <body>
-    
+
     <form action="">
         N1: <input type="text" id="n1"><br>
         N2: <input type="text" id="n2"><br>
+        <br>
+        <input type="button" value="Somar" onclick="somar()">
+        <input type="button" value="Subtrair" onclick="subtrair()">
+        <input type="button" value="Multiplicar" onclick="multiplicar()">
+        <input type="button" value="Dividir" onclick="dividir()">
+
+        <h1 id="resultado">O resultado dos números é </h1>
     </form>
 
 </body>
+
 </html>
