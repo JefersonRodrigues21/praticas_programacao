@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de condições - Switch</title>
+
+    <script>
+        /*
+        Verificar o aumento de salário de acordo com os seguintes cargos:
+        Estagiário: 100%
+        Analista: 50%
+        Gerente: 30%
+        */
+
+        const salario = prompt('Digite o salário');
+        const cargo = prompt('Digite o cargo');
+        let aumento = 0;
+              
+        switch (cargo) {
+            case 'estagiário': aumento = 1; break;
+            case 'analista': aumento = 0.5; break;
+            case 'gerente': aumento = 0.3; break;
+            case 'presidente': aumento = 0.1; break;
+            default: alert('Favor escolher um cargo válida!');
+        }
+
+        const novoSalario = salario + (salario * aumento);
+
+        console.log('O novo salário é: R$ ' + novoSalario);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
