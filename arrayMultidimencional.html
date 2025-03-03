@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Multidimensional</title>
+
+    <script>
+        
+        const nomes = ['Maria', 'José', 'Paulo', 'Augusto']
+
+        const idades = [18, 15, 65, 26, 36]
+
+        const notas = [
+            [5, 10, 9, 4],
+            [6, 'Paulo', 2, 10],
+            [8, 6, 3, 10]
+        ]
+
+        const pessoa = {nome: 'Maria', telefone: '(61) 98155-53', endereço: 'ABC'}
+
+        const pessoas = [
+            {nome: 'Maria', telefone: '(61) 98155-53', endereço: 'ABC'},
+            {nome: 'José', telefone: '(61) 98155-53', endereço: 'ABC'},
+            {nome: 'Paulo', telefone: '(61) 98155-53', endereço: 'ABC'},
+            {nome: 'Augusto', telefone: '(61) 98155-53', endereço: 'ABC'}
+        ]
+        
+        console.log(notas[2][2]);
+        console.table(pessoas[2].nome); // uma forma
+        console.table(pessoas[2]['nome']); //segunda forma
+
+        /*console.log(nomes[0]);
+        console.table(idades[3]);
+        console.table(notas[0][2]); 
+        */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

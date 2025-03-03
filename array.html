@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+
+    <script>
+        const carros = ['XC 60', 'Q 5', 'Rav 4', 'T-cross'];
+
+        /*for(let elemento of carros){
+            console.log(elemento);
+        }*/
+
+        /* for(let i = 0; i < 4; i++){
+             console.log(carros[i]);
+         }*/
+
+        carros.push('Corola'); // coloca no final
+        carros.unshift('XC 90'); // coloca no inicio
+
+        console.table(carros);
+
+        // const carro = carros.pop(); // retira o último inserido
+        // console.table(carro); // mostra o retirado pelo pop
+
+         // splice =  Adiciona, retira e edita.
+        carros.splice(1, 0, 'Discovery Sport'); //splice vai no index 1, e n exclui nada e adiciona 'Discovery Sport' 
+        carros.splice(1, 1, 'Macan'); //Splice vai no index 1, e exclui o index 1 e adiciona 'Macan'
+        console.table(carros);
+
+        carros.sort(); // Coloca os itens em ordem Alfabética.
+        console.table(carros);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
